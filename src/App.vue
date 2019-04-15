@@ -37,3 +37,29 @@ export default {
     },
 };
 </script>
+
+<style>
+body {
+    height: 100vh;
+    margin: 0;
+}
+</style>
+
+<style scoped>
+#app {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: Monaco, 'Courier New', Courier, monospace;
+    color: #f3f3f3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#app:hover {
+    opacity: 1;
+}
+</style>
