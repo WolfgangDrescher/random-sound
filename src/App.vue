@@ -55,7 +55,7 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    font-size: 2rem;
     font-family: Monaco, 'Courier New', Courier, monospace;
     color: #f3f3f3;
     opacity: 0;
