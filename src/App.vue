@@ -10,7 +10,7 @@ export default {
         return {
             howl: null,
             randomSoundFile: null,
-            path: '/sounds/',
+            path: './sounds/',
             sounds: [
                 '1152_1024.mp3',
                 '1280_1024.mp3',
