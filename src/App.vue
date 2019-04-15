@@ -27,9 +27,6 @@ export default {
                 autoplay: true,
                 loop: true,
                 volume: 1,
-                onend: function() {
-                    console.log('Finished!');
-                },
             });
             return sound;
         },
