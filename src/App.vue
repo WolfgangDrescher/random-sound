@@ -1,5 +1,5 @@
 <template>
-    <div id="app"></div>
+    <div id="app">{{ randomSoundFile }}</div>
 </template>
 
 <script>
@@ -8,6 +8,7 @@ import { Howl } from 'howler';
 export default {
     data() {
         return {
+            randomSoundFile: null,
             path: '/sounds/',
             sounds: [
                 '1152_1024.mp3',
@@ -21,9 +22,9 @@ export default {
             return this.sounds[Math.floor(Math.random() * this.sounds.length)];
         },
         playRandomSound() {
-            let soundFile = this.path + this.getRandomSound();
+            this.randomSoundFile = this.getRandomSound();
             var sound = new Howl({
-                src: [soundFile],
+                src: [this.randomSoundFile],
                 autoplay: true,
                 loop: true,
                 volume: 1,
