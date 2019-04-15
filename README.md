@@ -1,8 +1,17 @@
 # random-sound
 
+
 ## Install yarn
 
 https://yarnpkg.com/en/docs/install
+
+
+
+## Install git
+
+https://git-scm.com/
+
+
 
 ## Project setup
 
