@@ -1,5 +1,5 @@
 <template>
-    <div id="app">{{ randomSoundFile }}</div>
+    <div id="app" @click="playRandomSound">{{ randomSoundFile }}</div>
 </template>
 
 <script>
