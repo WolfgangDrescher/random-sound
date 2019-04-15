@@ -24,7 +24,7 @@ export default {
         playRandomSound() {
             this.randomSoundFile = this.getRandomSound();
             var sound = new Howl({
-                src: [this.randomSoundFile],
+                src: [this.path + this.randomSoundFile],
                 autoplay: true,
                 loop: true,
                 volume: 1,
