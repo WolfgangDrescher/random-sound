@@ -8,6 +8,7 @@ import { Howl } from 'howler';
 export default {
     data() {
         return {
+            howl: null,
             randomSoundFile: null,
             path: '/sounds/',
             sounds: [
@@ -23,13 +24,15 @@ export default {
         },
         playRandomSound() {
             this.randomSoundFile = this.getRandomSound();
-            var sound = new Howl({
+            if(this.howl !== null) {
+                this.howl.stop();
+            }
+            this.howl = new Howl({
                 src: [this.path + this.randomSoundFile],
                 autoplay: true,
                 loop: true,
                 volume: 1,
             });
-            return sound;
         },
     },
     mounted() {
